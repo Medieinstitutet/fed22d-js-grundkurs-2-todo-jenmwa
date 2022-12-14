@@ -1,45 +1,63 @@
 att göra kod:
 
-    * lägg allt i en centrerad container så designen håller sig enhållig.
+- STÄDA KOD!!!!!
+- alla kommentarer på engelska!
 
-    * GÖR KNAPPAR av kategorier - så de funkar med keyboard - alt annan lösning
+- i printTaskList - läggs till
+                            - bocka i klart
+                                -stryka över task samtidigt?
+                                -_NÅGON_ visuell förändring + längst ner på listan
+- validera inputs?
+    - ska man kunna lägga in tasks utan deadline?
+        - OM JA - ska de hamna sist på lista vid sortering av deadline-datum.
+        - skriva ut texten - ingen deadline eller liknande?
 
-    * ta bort klick
+- RESET ALL -knapp lista? (töm taskList samt localStorage?)
 
-    * lista ut hur li-elementen kan ta upp  - datum läggs till
-                                            - vald deadline
-                                            - kategori 
-                                            - bocka i klart
-                                            - ta bort
+- sakerna i lista ska gå att sorteras på:
+	inlagt datum
+	namn
+	Deadline
 
-                                            som kundkorgen munkarna ✅
+- IF-satser
+    OM uppgift klar:
+        visuellt SYNS klar och läggs längst ner i listan
+
+    OM deadline passerats
+        annan färg/ annat utseende SYNAS
+
+    OM deadline inom 5 dagar
+        test/färg förfaller snart
+
+BUGGAR:
+    - du kan lägga till flera av exakt samma todo. detta ska ej gå.
+    (kontrollera if-satsen och villkoren!)
+
+    - Kategorier default-läge = senast klickad... nollställ!
+
+    - markera klickat kategori! (add class?)
+
+CSS
+- lägg allt i en centrerad container så designen håller sig enhållig vid förstoring/förminskning
+- styla todo-LI-elementen _NÄR_ ikoner och allt printas som de ska.
+- styla kategori-valen!
+
+SAKER JAG VILL HA MED men ej prio:
+    - Mörkt läge toggle
+    - animation
+    - byta bakgrund beroende på årstid?
+
+*GLÖM EJ:
+- aria-label på knappar
+- TYPESCRIPT
+- STÄDA KOD!!!!!!!!
 
     todo + datum + deadline + kategori i ett objekt.
     vid klick på LÄGG TILL
      objekt till printList array
-     SAMTIDIGT
-     localstorage
+     och listan till
+        localstorage
 
-    * designa todo's-gör till div ist för li
-        lägg in element för:
-            alla values (input value - tillagt datum - deadline - kategori)
-
-    Add a new todo item.
-Strikeout the todo item if it is completed.
-Delete the todo item.
-Then always save the todo items permanently on LocalStorage.
-
-//
 LÄNKTIPS:
 Typescript och localStorage.
 https://www.youtube.com/watch?v=jBmrduvKl5w
-
-
-    *SAKER JAG VILL HA MED:
-        * animation
-        * byta bakgrund beroende på årstid?
-
-
-*GLÖM EJ:
-- aria-label på knappar
-- 
